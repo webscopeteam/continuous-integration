@@ -1,0 +1,10 @@
+api_version: 1
+
+workflows:
+
+  # Commits: Config import after sync
+  sync_code:
+    after:
+      - type: webphp
+        description: Config import after sync
+        script: private/scripts/config_import.php
